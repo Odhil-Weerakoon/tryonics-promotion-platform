@@ -1,0 +1,70 @@
+import { User, Promotion } from "./types";
+
+export const MOCK_USERS: User[] = [
+  { id: 1, name: "Marta Okonkwo", email: "marta@promo.io", role: "Admin", active: true },
+  { id: 2, name: "Daisuke Watanabe", email: "daisuke@promo.io", role: "Operator", active: true },
+  { id: 4, name: "Carlos Estrada", email: "carlos@promo.io", role: "Operator", active: false },
+];
+
+export const MOCK_PROMOTIONS: Promotion[] = [
+  {
+    id: 1,
+    title: "Summer Flash Sale",
+    description: "Up to 40% off across our entire summer collection. Limited time — don't miss out on the season's best deals.",
+    status: "Active",
+    startDate: "2026-07-01",
+    endDate: "2026-08-31",
+    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&h=340&fit=crop&auto=format",
+    category: "Fashion",
+  },
+  {
+    id: 2,
+    title: "Back to School Bundle",
+    description: "Everything students need — from stationery to laptops — at student-exclusive prices.",
+    status: "Scheduled",
+    startDate: "2026-09-01",
+    endDate: "2026-09-30",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=340&fit=crop&auto=format",
+    category: "Education",
+  },
+  {
+    id: 3,
+    title: "Loyalty Points Week",
+    description: "Triple your loyalty points on every purchase this week. More points, more rewards.",
+    status: "Scheduled",
+    startDate: "2026-10-01",
+    endDate: "2026-10-07",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=340&fit=crop&auto=format",
+    category: "Rewards",
+  },
+  {
+    id: 4,
+    title: "Referral Rewards Campaign",
+    description: "Earn $20 in credit for every friend you refer. No cap on earnings — share and save all year long.",
+    status: "Active",
+    startDate: "2026-08-15",
+    endDate: "2026-12-31",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=340&fit=crop&auto=format",
+    category: "Rewards",
+  },
+  {
+    id: 5,
+    title: "Tech Upgrade Week",
+    description: "Premium electronics at prices you won't find anywhere else. From headphones to smart home devices.",
+    status: "Active",
+    startDate: "2026-09-05",
+    endDate: "2026-09-12",
+    image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&h=340&fit=crop&auto=format",
+    category: "Electronics",
+  },
+  {
+    id: 6,
+    title: "Wellness & Self-Care Month",
+    description: "Pamper yourself with up to 30% off on wellness, beauty, and fitness products through October.",
+    status: "Scheduled",
+    startDate: "2026-10-01",
+    endDate: "2026-10-31",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=340&fit=crop&auto=format",
+    category: "Health",
+  },
+];
